@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Classification Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #e74c3c, #f39c12);
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #3498db, #e74c3c, #f39c12);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #e74c3c, #f39c12, #3498db);
+        }
+
+        h3 {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Classification Web App</h1>
+    <form method="POST" action="/predict">
+        <label for="text">Enter your text:</label>
+        <br>
+        <textarea name="text" id="text" cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if category %}
+        <h3>Predicted Category: {{ category }}</h3>
+    {% endif %}
+</body>
+</html>
