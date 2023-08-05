@@ -1,6 +1,9 @@
 # TextClassificationApp
-Poseidon is a yoga pose detection project that uses a convolutional neural network (CNN), OpenCV, and MediaPipe to detect and track yoga poses in real time. It is deployed on Streamlit and provides users with a variety of features, including the ability to set model parameters, display real-time input and output streams with landmark recording, and use both cameras and uploaded files as input.
- Poseidon is a yoga pose detection project that uses OpenCV, and MediaPipe to detect and track yoga poses in real time. It is deployed on Streamlit and provides users with a variety of features, including the ability to set model parameters, display real-time input and output streams with landmark recording, and use both cameras and uploaded files as input.
+This is a web application for text classification using Natural Language Processing (NLP). It allows users to input text and get predictions on the category or topic of the text.
+The project is built using Python, Flask, and scikit-learn for text processing and classification.
 
- ## Installation
- To run NLP-Sentiments, you will need to have Python 3 installed on your system, as well as several Python packages, including OpenCV, MediaPipe, TensorFlow, and Streamlit. You can install these packages using the following command:
+# Installation
+1. Install the required Python libraries:
+2. Run the web app locally:
+3. The web app will be accessible at http and enter your text in the input box and click "Submit" to get the predicted category.
+
